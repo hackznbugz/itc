@@ -1,0 +1,100 @@
+
+nav{
+    position: fixed;
+    padding: 2rem 0;
+    width: 100%;
+    transition: .3s;
+    z-index: 200;
+}
+
+nav.sticky {
+    padding: 1rem 0;
+    background: #101113;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container img{
+    width:40px;
+}
+
+nav .container .hamburger{
+    height: 20px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .container .hamburger span{
+    min-width: 100%;
+    display: block;
+    min-height: 2px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+
+.nav-box{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right:0;
+    z-index: 300;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.5);
+    transform: translatex(100%);
+    transition: .5s;
+}
+
+.nav-box .container{
+    height: calc(100% - 5rem);
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.nav-box .container img{
+    width:25px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.nav-box .container .links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    width: 800px;
+}
+
+.nav-box .container ul{
+    list-style: none;   
+}
+
+.nav-box .container ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: .3s;
+}
+
+.nav-box .container ul a:hover{
+    color: rgb(143, 143, 143);
+}
+
+.nav-box .container ul li{
+    margin: 1rem 0;
+}

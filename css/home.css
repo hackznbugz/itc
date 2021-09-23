@@ -1,0 +1,231 @@
+.main-banner{
+    background: url(../img/main-banner.png);
+    background-size: cover;
+}
+
+.main-banner .container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.main-banner .content{
+    color: #fff;
+    align-self: flex-end;
+    width: 45%;
+    padding: 5rem 0;
+    padding-top: 22rem;
+}
+
+.main-banner .arrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.main-banner .arrow img{
+    width:23px;
+    cursor: pointer;
+}
+
+.main-banner .content h4{
+    margin-bottom: 1rem;
+}
+
+.main-banner .content h1{
+    font-size: 4rem;
+    margin-bottom: .5rem;
+}
+
+.main-banner .content p{
+    font-size: .8rem;
+    max-width: 480px;
+}
+
+.story{
+    background: url(../img/story-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.story .container{
+    max-width: 900px;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+}
+
+.story .container .content{
+    max-width: 650px;
+}
+
+.tcommunication {
+    background: url(../img/tcommunication-background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.tcommunication .container{
+    max-width: 900px;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+}
+
+.tcommunication .container .row{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.tcommunication .container .row:first-of-type{
+    height: 550px;
+}
+
+.tcommunication .container .row:last-of-type{
+    margin-top: 1rem;
+}
+
+.tcommunication .container .row > .image{
+    width:50%;
+    background: url(../img/tcommunication.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.tcommunication .container .row > .content{
+    width: calc(50% - 6rem);
+    background: #EC3237;
+    color: #fff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tcommunication .container .row > .content h4{
+    color: #fff;
+}
+
+.tcommunication .container .row > .content p{
+    font-weight: 400;
+}
+
+.tcommunication .container .row .box{
+    width: 48.9%;
+    background: #fff;
+}
+
+.tcommunication .container .row .box .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tcommunication .container .row .box .content .btn{
+    margin-top: 0px;
+}
+
+.tcommunication .container .row .box .image{
+    height: 200px;
+    background: url(../img/calibration.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tcommunication .container .row .box:last-of-type .image{
+    background: url(../img/mep.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tcommunication .bg-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left:0;
+    z-index: 1;
+}
+
+.speciality .container{
+    max-width: 900px;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.speciality .container .box{
+    width: calc((100% / 3) - 3rem);
+    text-align: center;
+}
+
+.speciality .container h4{
+    font-size: 1.2rem;
+    margin: .8rem 0;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.speciality .container img{
+    width:50px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.gallery .image{
+    height: 300px;
+}
+
+.clients .container{
+    max-width: 900px;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clients h2{
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.clients .container .row{
+    position: relative;
+    overflow: hidden;
+}
+
+.clients .container .slider{
+    position: relative;
+}
+
+.clients .container .fas{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.2);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.clients .container .fas.fa-chevron-left{
+    left:-50px;
+}
+
+.clients .container .fas.fa-chevron-right{
+    right:-50px;
+}
+
+.clients .container .image{
+    display: inline-block;
+    height: 100px;
+    margin: 0 3rem;
+}

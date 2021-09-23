@@ -1,0 +1,121 @@
+.main-banner2{
+    background: url(../img/about-banner.png);
+    background-size: cover;
+}
+
+.main-banner2 .container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-banner2 .content{
+    color: #fff;
+    align-self: flex-end;
+    max-width: 450PX;
+    padding: 5rem 0;
+    padding-top: 22rem;
+}
+
+.main-banner2 .content h1{
+    font-size: 4rem;
+    margin-bottom: .5rem;
+}
+
+.main-banner2 .content p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.story .container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+
+.mission {
+    background: url(../img/about-mission-background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.mission .container{
+    max-width: 900px;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+}
+
+.mission .container .row{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.mission .container .row .image{
+    width:50%;
+    background: url(../img/tcommunication.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mission .container .row .content{
+    width: calc(50% - 6rem);
+    background: #EC3237;
+    color: #fff;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mission .container .row .content p{
+    font-weight: 400;
+}
+
+
+.details .container{
+    max-width: 900px;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+}
+
+.details  h2{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.details .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.details .row:first-of-type{
+    margin-bottom: 2rem;
+}
+
+.details .row .content:first-of-type{
+    width:210px;
+}
+
+.details .row .content:last-of-type{
+    width: calc(100% - 210px - 2rem);
+}
+
+.details .row .content.image{
+    background: url(../img/calibration.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.details .row .content p{
+    padding: 0;
+    margin: 0;
+    line-height: 22px;
+}

@@ -1,0 +1,92 @@
+.main-banner2{
+    background: url(../img/mep-banner.png);
+    background-size: cover;
+}
+
+.mission h2{
+    font-size: 1.3rem;
+}
+
+.mission p{
+    margin:.5rem 0;
+}
+
+.mission .container .row .image{
+    width:50%;
+    background: url(../img/mep-material.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mission{
+    background: url(../img/mep-material-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.details .row{
+    display: block;
+}
+
+.details h2{
+    margin-bottom: 1.5rem;
+}
+
+.details .row .slide .inner{
+    position: relative;
+}
+
+.details .row .slide .image{
+    display: inline-block;
+    height: 200px;
+    margin: 0 .5rem;
+}
+
+.details .row:first-of-type{
+    margin-bottom: 4rem;
+}
+
+.story .row{
+    display: flex;
+    align-items: stretch;
+    justify-content:space-between;
+}
+
+.story .row .content{
+    width:48%;
+}
+
+.story .row p{
+    margin-top: 0;
+}
+
+.story .row .content.image{
+    background: url(../img/mep-story.png);
+    background-size: cover;
+}
+
+.details .row .slide{
+    position: relative;
+}
+
+.details .row .slide .inner{
+    position: relative;
+    margin: 0 -0.5rem;
+    overflow: hidden;
+}
+
+.details .row .fas{
+    position: absolute;
+    color: #000;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.details .row .fas.fa-chevron-left{
+    left:-100px;
+}
+
+.details .row .fas.fa-chevron-right{
+    right:-100px;
+}
