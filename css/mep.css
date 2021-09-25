@@ -90,3 +90,21 @@
 .details .row .fas.fa-chevron-right{
     right:-100px;
 }
+
+@media(max-width:500px){
+    .details .row .fas{
+        color: #fff;
+        padding: .8rem 1rem;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        z-index: 100;
+    }
+
+    .details .row .fas.fa-chevron-left{
+        left:-2px;
+    }
+
+    .details .row .fas.fa-chevron-right{
+        right:-2px;
+    }
+}

@@ -166,3 +166,30 @@
     color: #fff;
     font-weight: 550;
 }
+
+
+@media(max-width:500px){
+    .banner{
+        padding: 15rem 0rem;
+        padding-bottom: 5rem;
+    }
+    .banner h1{
+        font-size:2rem;
+    }
+
+    .box{
+        flex-direction: column;
+        margin-top: 0;
+        height: auto;
+    }
+
+    .box .form{
+        width: auto;
+        padding: 3rem 1rem;
+    }
+
+    .box .details{
+        width: auto;
+        padding: 3rem 1rem;
+    }
+}
