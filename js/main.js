@@ -41,3 +41,9 @@ $(document).ready(function(){
      ]
     }); 
  });
+
+ $('.arrow img').click(function(){
+    document.querySelector('.story').scrollIntoView({
+        behavior: 'smooth'
+    });
+ });
