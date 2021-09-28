@@ -230,6 +230,97 @@
     margin: 0 3rem;
 }
 
+.gallery-carousel .container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery-carousel{
+    display: none;
+    position: fixed;
+    z-index: 300;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 3rem 0;
+    transition: .3s;
+}
+
+.gallery-carousel .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom:2rem;
+}
+
+.gallery-carousel .top i{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.gallery-carousel .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 200px);
+    margin-left: -100px;
+    height: calc(100vh - 10rem);
+}
+
+.gallery-carousel .row .arrow{
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.gallery-carousel .row .arrow i{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.gallery-carousel i:hover, .gallery-carousel .row .arrow i:hover{
+    color: #fff;
+}
+
+.gallery-carousel .row .image{
+    display: block;
+    width: 85%;
+    background:url(../gallery/image1.png);
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    height: 100%;
+    transition: .2s;
+}
+
+@media(max-width:930px){
+    .gallery-carousel .row .image{
+        width: calc(80% - 4rem);
+        margin: 0 auto;
+    }
+
+    .gallery-carousel .row .arrow:first-of-type{
+        transform: translateX(50%);
+    }
+
+    .gallery-carousel .row .arrow:last-of-type{
+        transform: translateX(-50%);
+    }
+
+    .gallery-carousel .row .arrow i{
+        border-radius: 50%;
+        padding: .5rem .8rem;
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
 @media(max-width:500px){
     .main-banner{
         background-position: center;
@@ -334,5 +425,18 @@
 
     .contact .container{
         padding: 3rem 1rem;
+    }
+
+    .gallery-carousel .row .image{
+        width: calc(75% - 4rem);
+        margin: 0 auto;
+    }
+
+    .gallery-carousel .row .arrow:first-of-type{
+        transform: translateX(60%);
+    }
+
+    .gallery-carousel .row .arrow:last-of-type{
+        transform: translateX(-60%);
     }
 }
