@@ -1,37 +1,47 @@
-.main-banner2{
+.main-banner2 {
     background: url(../img/about-banner.png);
-    background-size: cover;
+    background-size: cover !important;
+    position: relative;
 }
 
-.main-banner2 .container{
+.main-banner2 .overlay {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.main-banner2 .container {
+    position: relative;
     max-width: 900px;
     margin: 0 auto;
+    z-index: 1;
 }
 
-.main-banner2 .content{
+.main-banner2 .content {
     color: #fff;
     align-self: flex-end;
-    max-width: 450PX;
+    max-width: 450px;
     padding: 5rem 0;
     padding-top: 22rem;
 }
 
-.main-banner2 .content h1{
+.main-banner2 .content h1 {
     font-size: 4rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
-.main-banner2 .content p{
-    font-size: .8rem;
+.main-banner2 .content p {
+    font-size: 0.8rem;
     font-weight: 400;
 }
 
-.story .container{
+.story .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 4rem 0;
 }
-
 
 .mission {
     background: url(../img/about-mission-background.png);
@@ -40,7 +50,7 @@
     position: relative;
 }
 
-.mission .container{
+.mission .container {
     max-width: 900px;
     padding: 5rem 2rem;
     margin: 0 auto;
@@ -48,22 +58,22 @@
     position: relative;
 }
 
-.mission .container .row{
+.mission .container .row {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
 }
 
-.mission .container .row .image{
-    width:50%;
+.mission .container .row .image {
+    width: 50%;
     background: url(../img/tcommunication.png);
     background-position: center;
     background-size: cover;
 }
 
-.mission .container .row .content{
+.mission .container .row .content {
     width: calc(50% - 6rem);
-    background: #EC3237;
+    background: #ec3237;
     color: #fff;
     padding: 4rem 3rem;
     display: flex;
@@ -72,12 +82,11 @@
     align-items: flex-start;
 }
 
-.mission .container .row .content p{
+.mission .container .row .content p {
     font-weight: 400;
 }
 
-
-.details .container{
+.details .container {
     max-width: 900px;
     padding: 5rem 2rem;
     margin: 0 auto;
@@ -85,97 +94,97 @@
     position: relative;
 }
 
-.details  h2{
+.details h2 {
     font-size: 1.5rem;
     margin-bottom: 3rem;
 }
 
-.details .row{
+.details .row {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
 
-.details .row:first-of-type{
+.details .row:first-of-type {
     margin-bottom: 2rem;
 }
 
-.details .row .content:first-of-type{
-    width:210px;
+.details .row .content:first-of-type {
+    width: 210px;
 }
 
-.details .row .content:last-of-type{
+.details .row .content:last-of-type {
     width: calc(100% - 210px - 2rem);
 }
 
-.details .row .content.image{
+.details .row .content.image {
     background: url(../img/calibration.png);
     background-position: center;
     background-size: cover;
 }
 
-.details .row .content p{
+.details .row .content p {
     padding: 0;
     margin: 0;
     line-height: 22px;
 }
 
-@media(max-width:500px){
-
-    .main-banner2 .content h1{
+@media (max-width: 500px) {
+    .main-banner2 .content h1 {
         font-size: 2rem;
     }
     .main-banner2 .content {
         padding-top: 15rem;
     }
 
-    .story .container{
+    .story .container {
         padding: 3rem 1rem;
     }
-    .story .row{
+    .story .row {
         flex-direction: column;
     }
-    .story .row .content{
+    .story .row .content {
         width: auto !important;
     }
 
-    .story .row .content.image{
+    .story .row .content.image {
         height: 200px;
     }
-    .story .row{
+    .story .row {
         grid-template-columns: auto !important;
     }
 
-    .mission .container{
+    .mission .container {
         padding: 3rem 1rem;
     }
-    .mission .container .row{
+    .mission .container .row {
         flex-direction: column;
     }
-    .mission .container .row .content{
+    .mission .container .row .content {
         width: auto;
         padding: 1rem;
     }
-    .mission .container .row .image{
+    .mission .container .row .image {
         width: 100% !important;
         height: 200px;
     }
 
-    .details .container{
+    .details .container {
         padding: 3rem 1rem;
     }
-    .details .row{
+    .details .row {
         flex-direction: column;
     }
-    .details .row .content:first-of-type, .details .row .content:last-of-type{
+    .details .row .content:first-of-type,
+    .details .row .content:last-of-type {
         width: auto;
         margin-bottom: 1rem;
     }
-    .details .row .content.image{
+    .details .row .content.image {
         width: 100%;
         height: 200px;
     }
-    .details h2{
+    .details h2 {
         margin-bottom: 1rem;
     }
 }
