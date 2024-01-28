@@ -19,7 +19,67 @@
     <body>
         <nav id="navbar">
             <div class="container">
-                <img src="../img/logo.png" alt="ITC logo" class="logo" />
+                <a href="/">
+                    <img
+                        src="../img/logo-large.png"
+                        alt="ITC logo"
+                        class="logo"
+                    />
+                    <img
+                        src="../img/logo.png"
+                        alt="ITC logo"
+                        class="logo-small"
+                    />
+                </a>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="#">About Us</a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="/about">About the Company</a>
+                                </li>
+                                <li><a href="/md-message">MD Message</a></li>
+                                <li><a href="/client">Client</a></li>
+                                <li><a href="/partnering">Partnering</a></li>
+                                <li><a href="/careers">Careers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Divisions</a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="/elv">ELV & Telecom</a>
+                                </li>
+                                <li><a href="/calibration">Calibration</a></li>
+                                <li>
+                                    <a href="/software">Software solutions</a>
+                                </li>
+                                <li><a href="/mep">MEP</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="/about">Aramco</a>
+                                </li>
+                                <li>
+                                    <a href="/about">Royal Commission</a>
+                                </li>
+                                <li>
+                                    <a href="/about">Others</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/downloads">Downloads</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -28,33 +88,13 @@
             </div>
         </nav>
 
-        <div class="nav-box">
-            <div class="container">
-                <img
-                    src="../img/close.png"
-                    alt="Close icon"
-                    class="nav-box-close"
-                />
-                <div class="links">
-                    <ul>
-                        <li><a href="/itc">Home</a></li>
-                        <li><a href="/itc/about">About Us</a></li>
-                        <li><a href="/itc/telecom">Telecommunications</a></li>
-                        <li><a href="/itc/calibration">Calibration</a></li>
-                        <li><a href="/itc/mep">MEP</a></li>
-                        <li><a href="/itc/contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
         <div class="banner">
             <div class="container">
                 <h1>Contact Us</h1>
                 <div class="line"></div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Maiores voluptas aliquid exercitationem fugiat maxime magni!
+                    Contact us about anything to our company or services, We”ll
+                    do our best to get back to you as soon as possible:
                 </p>
             </div>
         </div>
@@ -92,14 +132,14 @@
                             </div>
                         </div>
 
-                        <label for="product">Product/Service</label>
+                        <!-- <label for="product">Product/Service</label>
                         <select name="product" id="product">
                             <option value="product1">Product 1</option>
                             <option value="product2">Product 2</option>
                             <option value="product3">Product 3</option>
                             <option value="product4">Product 4</option>
                             <option value="product5">Product 5</option>
-                        </select>
+                        </select> -->
 
                         <label for="message">Message</label>
                         <textarea
@@ -131,11 +171,13 @@
                 </div>
                 <div class="pline">
                     <i class="fas fa-mobile-alt"></i>
-                    <p>+91 12345 67890</p>
+                    <p><a href="tel:+966-13-3631214">+966-13-3631214</a></p>
                 </div>
                 <div class="pline">
                     <i class="fas fa-envelope"></i>
-                    <p>example@itcsaudi.com</p>
+                    <p>
+                        <a href="mailto:info@itesaudi.com">info@itesaudi.com</a>
+                    </p>
                 </div>
 
                 <div class="social">
