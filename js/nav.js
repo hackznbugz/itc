@@ -12,7 +12,7 @@ $('.hamburger').click(function () {
 // sticky navbar
 window.onscroll = function () {
     var navbar = document.getElementById('navbar')
-    var sticky = navbar.offsetTop + 100
+    var sticky = navbar.offsetTop + 600
 
     if (window.pageYOffset >= sticky) {
         navbar.classList.add('sticky')
