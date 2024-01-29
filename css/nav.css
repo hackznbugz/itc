@@ -89,7 +89,13 @@ nav .logo-container {
     position: relative;
     flex: 1;
     display: flex;
+    gap: 2rem;
     align-items: center;
+}
+
+nav .logo-container .vision {
+    height: 40px;
+    width: auto;
 }
 
 nav .logo-bg {
