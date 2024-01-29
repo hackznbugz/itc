@@ -196,6 +196,66 @@
     width: 50px;
 }
 
+.stats .container {
+    max-width: 900px;
+    padding: 2rem;
+    margin: 1rem auto;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transform: skewX(30deg);
+    overflow: hidden;
+}
+
+.stats .container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.stats .container::after {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+    height: 100%;
+    width: calc(100% + 5rem);
+    background: url(../img/partnering.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transform: skewX(-30deg);
+}
+
+.stats .container * {
+    margin: 0;
+}
+
+.stats .container .item {
+    transform: skewX(-30deg);
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #ec3237;
+}
+
+.stats .container h3 {
+    font-size: 2rem;
+}
+
+.stats .container p {
+    color: #ffffff;
+}
+
 .gallery {
     text-align: center;
 }
@@ -359,6 +419,11 @@
 }
 
 @media (max-width: 500px) {
+    .stats .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     .main-banner .container {
         grid-template-columns: repeat(1, 1fr);
     }
