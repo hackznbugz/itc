@@ -93,8 +93,43 @@ nav .logo-container {
     align-items: center;
 }
 
-nav .logo-container .vision {
+nav .logo-container .extra-logos {
+    display: flex;
+    align-items: center;
+    gap: calc(1rem + 5px);
+}
+
+nav .logo-container .extra-logos img {
     height: 40px;
+    width: auto;
+}
+
+nav .logo-container .extra-logos a {
+    position: relative;
+}
+
+nav
+    .logo-container
+    .extra-logos
+    a:not(nav .logo-container .extra-logos a:last-of-type)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 0.5rem);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ec3237;
+}
+
+nav .logo-container .extra-logos a:nth-of-type(2) img {
+    height: 43px;
+    width: auto;
+}
+
+nav .logo-container .extra-logos a:nth-of-type(3) img {
+    height: 50px;
     width: auto;
 }
 
