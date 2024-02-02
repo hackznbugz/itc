@@ -61,23 +61,18 @@
 
 .projects table td {
     padding: 1rem;
-    border: 3px solid #000;
     border-top: none;
     border-right: none;
 }
 
-.projects table tr td:last-of-type {
-    border-right: 3px solid #000;
+.projects table tbody tr:nth-child(odd) {
+    background-color: #dadada;
 }
 
 .projects table th {
+    text-align: left;
     padding: 1rem;
     border: 3px solid #ec3237;
-}
-
-.projects table th:not(.projects table th:last-of-type) {
-    border-right: 3px solid #fff;
-    padding: 1rem;
 }
 
 .projects table p {
