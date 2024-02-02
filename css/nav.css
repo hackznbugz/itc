@@ -93,6 +93,17 @@ nav .logo-container {
     align-items: center;
 }
 
+nav .logo-container > a {
+    position: relative;
+}
+
+nav .reg {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 60%;
+    left: 100%;
+}
+
 nav .logo-container .extra-logos {
     display: flex;
     align-items: center;
