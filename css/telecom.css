@@ -1,60 +1,64 @@
-.main-banner2{
+.main-banner2 {
     background: url(../img/telecom-banner.png);
     background-size: cover;
 }
 
-.mission h2{
+.mission h2 {
     font-size: 1.3rem;
 }
 
-.mission p{
-    margin:.3rem 0;
+.mission p {
+    margin: 0.3rem 0;
 }
 
-.mission .container .row .image{
-    width:50%;
+.mission .container .row .image {
+    width: 50%;
     background: url(../img/telecom-material.png);
     background-position: center;
     background-size: cover;
 }
 
-.mission{
+.mission {
     background: url(../img/tcom-material-bg.png);
     background-position: center;
     background-size: cover;
 }
 
-.details .row{
+.mission p {
+    font-size: 1rem;
+}
+
+.details .row {
     display: block;
 }
 
-.details h2{
+.details h2 {
     margin-bottom: 1.5rem;
 }
 
-.details p{
+.details p {
     max-width: 800px;
 }
 
-.details .row:last-of-type p{
+.details .row:last-of-type p {
     max-width: 350px;
 }
 
-.story .row{
+.story .row {
     display: flex;
     align-items: stretch;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.story .row .content{
-    width:48%;
+.story .row .content {
+    width: 48%;
 }
 
-.story .row p{
+.story .row p {
     margin-top: 0;
 }
 
-.story .row .content.image{
+.story .row .content.image {
     background: url(../img/telecom-story.png);
     background-size: cover;
 }
