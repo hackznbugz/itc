@@ -93,6 +93,8 @@ nav .logo-container {
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
 }
 
 nav .logo-container > a {
@@ -108,10 +110,6 @@ nav .reg {
 
 nav .extra-logos {
     display: flex;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     align-items: center;
     gap: calc(1rem + 5px);
 }
@@ -257,5 +255,9 @@ nav .container .hamburger.open span:nth-of-type(3) {
     .container {
         padding: 0 1rem;
         width: calc(100% - 2rem);
+    }
+
+    nav .logo-container {
+        padding-right: 0.1rem;
     }
 }
