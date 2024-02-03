@@ -273,49 +273,6 @@
     height: 300px;
 }
 
-.clients .container {
-    max-width: 900px;
-    padding: 5rem 2rem;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.clients h2 {
-    font-size: 1.5rem;
-    margin-bottom: 4rem;
-}
-
-.clients .container .row {
-    position: relative;
-    overflow: hidden;
-}
-
-.clients .container .slider {
-    position: relative;
-}
-
-.clients .container .fas {
-    position: absolute;
-    color: rgba(0, 0, 0, 0.2);
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-.clients .container .fas.fa-chevron-left {
-    left: -50px;
-}
-
-.clients .container .fas.fa-chevron-right {
-    right: -50px;
-}
-
-.clients .container .image {
-    display: inline-block;
-    height: 100px;
-    margin: 0 3rem;
-}
-
 .gallery-carousel .container {
     max-width: 900px;
     margin: 0 auto;
@@ -496,26 +453,6 @@
 
     .gallery .image {
         height: 150px;
-    }
-
-    .clients .container {
-        padding: 3rem 1rem;
-    }
-
-    .clients .container .fas {
-        color: #fff;
-        padding: 0.8rem 1rem;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 50%;
-        z-index: 100;
-    }
-
-    .clients .container .fas.fa-chevron-left {
-        left: 5px;
-    }
-
-    .clients .container .fas.fa-chevron-right {
-        right: 5px;
     }
 
     .contact .container {
