@@ -247,13 +247,29 @@
     z-index: 2;
     position: relative;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    color: #ec3237;
+}
+
+.stats .container .item svg {
+    width: 50px;
+    height: 50px;
+    fill: rgba(255, 255, 255, 0.7);
+}
+
+.stats .container .item .content {
+    z-index: 2;
+    position: relative;
+    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     color: #ec3237;
 }
 
 .stats .container h3 {
     font-size: 2rem;
+    font-weight: bolder;
 }
 
 .stats .container p {
